@@ -1,0 +1,111 @@
+================================================================================
+                    SNAKE GAME - DOKUMENTACJA PROJEKTU
+================================================================================
+
+--------------------------------------------------------------------------------
+1. OPIS PROJEKTU
+--------------------------------------------------------------------------------
+
+Gra Snake w języku C# uruchamiana w konsoli. Projekt wykorzystuje GitHub do
+współpracy zespołowej i zarządzania kodem.
+
+
+--------------------------------------------------------------------------------
+2. FUNKCJE GRY
+--------------------------------------------------------------------------------
+
+2.1 Sterowanie
+    - Strzałka w górę: ruch w górę
+    - Strzałka w dół: ruch w dół
+    - Strzałka w lewo: ruch w lewo
+    - Strzałka w prawo: ruch w prawo
+
+2.2 Cel gry
+    - Zbieranie jedzenia (oznaczone symbolem *) zwiększa wynik
+    - Po zjedzeniu wąż się wydłuża
+    - Gra trwa do momentu kolizji ze ścianą lub własnym ogonem
+
+2.3 Elementy na ekranie
+    - Wąż (głowa): zielony kwadrat
+    - Jedzenie: cyanowy znak *
+    - Ściany: białe obramowanie planszy
+    - Wynik: wyświetlany obok planszy
+
+2.4 Warunki zakończenia gry
+    - Kolizja ze ścianą (krawędź planszy)
+    - Kolizja z własnym ogonem
+    - Komunikat "Game Over" z finalnym wynikiem
+
+
+--------------------------------------------------------------------------------
+3. STRUKTURA PROJEKTU
+--------------------------------------------------------------------------------
+
+Snake.cs      - główna logika gry, pętla gry, sterowanie, kolizje
+Pixel.cs      - klasa reprezentująca punkt (pozycja, kolor, znak)
+Obstakel.cs   - klasa przeszkody/jedzenia (pozycja, kolor, znak)
+
+
+
+--------------------------------------------------------------------------------
+4. ZASADY WSPÓŁPRACY (GITHUB)
+--------------------------------------------------------------------------------
+
+4.1 Repozytorium
+    - Nazwa: SnakeGame
+    - Każdy uczestnik pracuje w swojej gałęzi (branch)
+
+4.2 Przepływ pracy
+    - Utworzenie oddzielnej gałęzi do realizacji zadania
+    - Implementacja kodu w swojej gałęzi
+    - Wysłanie merge request do gałęzi głównej
+    - Recenzja przez innych uczestników
+    - Po zaakceptowaniu - scalenie zmian
+    - Testowanie po scaleniu
+
+4.3 Podział zadań (sugerowany)
+    - Implementacja ruchu węża
+    - Obsługa klawiszy
+    - Mechanika jedzenia i punktacji
+    - Kolizje ze ścianą i ogonem
+    - Funkcje współpracy multi-player (do rozbudowy)
+    - Aktualizacja dokumentacji
+
+4.4 Rozwiązywanie problemów
+    - Tworzenie issue na GitHub przy problemach i pomysłach
+    - Przypisanie issue do siebie
+    - Rozwiązanie przez nową gałąź i merge request
+
+
+--------------------------------------------------------------------------------
+5. INSTRUKCJE URUCHOMIENIA
+--------------------------------------------------------------------------------
+
+5.1 Wymagania
+    - .NET SDK 9.0 lub nowszy
+    - Środowisko: Visual Studio, VS Code, Rider lub dowolny edytor z .NET
+
+5.2 Uruchomienie z wiersza poleceń
+    - Otwórz terminal w folderze projektu (Pliki)
+    - Komenda: dotnet run (dotnet new console jeśli nie ma pliku projektu)
+
+5.3 Kompilacja
+    - Komenda: dotnet build
+    - Plik wykonywalny: bin\Debug\net9.0\Pliki.exe
+
+5.4 Wersja Release
+    - Komenda: dotnet build -c Release
+    - Plik: bin\Release\net9.0\Pliki.exe
+
+
+--------------------------------------------------------------------------------
+6. TECHNICZNE SZCZEGÓŁY
+--------------------------------------------------------------------------------
+
+Framework:     .NET 9.0
+Typ projektu:  Aplikacja konsolowa (Exe)
+Interfejs:     Console (System.Console)
+
+================================================================================
+                            KONIEC DOKUMENTACJI
+================================================================================
