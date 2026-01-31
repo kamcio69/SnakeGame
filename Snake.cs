@@ -209,6 +209,8 @@ class Program
 
             //Hindernis treffen
 
+            bool ate = false;
+
             if (hoofd.xPos == obstacleXpos && hoofd.yPos == obstacleYpos)
 
             {
@@ -219,15 +221,23 @@ class Program
 
                 obstacleYpos = randomnummer.Next(1, screenheight);
 
+                ate = true;
+
             }
 
             teljePositie.Insert(0, hoofd.xPos);
 
             teljePositie.Insert(1, hoofd.yPos);
 
-            teljePositie.RemoveAt(teljePositie.Count - 1);
+            if (!ate)
 
-            teljePositie.RemoveAt(teljePositie.Count - 1);
+            {
+
+                teljePositie.RemoveAt(teljePositie.Count - 1);
+
+                teljePositie.RemoveAt(teljePositie.Count - 1);
+
+            }
 
             //Kollision mit Wände oder mit sich selbst
 
