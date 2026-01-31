@@ -127,7 +127,7 @@ class Program
 
             Console.Write("H");
 
-            for (int i = 2; i < teljePositie.Count - 1; i += 2)
+            for (int i = 2; i + 1 < teljePositie.Count; i += 2)
 
             {
 
@@ -263,7 +263,7 @@ class Program
 
             }
 
-            for (int i = 2; i < teljePositie.Count - 1; i += 2)
+            for (int i = 2; i + 1 < teljePositie.Count; i += 2)
 
             {
 
